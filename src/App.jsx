@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Card from "./components/Card";
 import Children from "./components/Children";
 import List from "./components/List";
+import Controlled from "./components/Controlled";
 function App() {
   const [wvalue, setValue] = useState(0)   //value can be of any type ."",{},[],numbers
   const [inputValue, setInputValue] = useState("")
@@ -29,6 +30,7 @@ function App() {
         </Children>
       </div>
       <List/>
+      <Controlled/>
 
     </>
   )
