@@ -45,12 +45,20 @@ import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Fetch from './components/Fetch'
 import FetchAxios from './components/FetchAxios'
+import UseMemoHook from './components/useMemoHook'
+import UseCallbackExample from './components/useCallbackHook'
+import HookForm from './components/HookForm'
+import ReactHookForm from './components/ReactHookForm'
 const App = () => {
   return (
     <>
       <Routes>
         <Route path='/home' element={<Fetch />} />
         <Route path='/fetch/:id' element={<FetchAxios />} />
+        <Route path='/memohook' element={<UseMemoHook />} />
+        <Route path='/callbackhook' element={<UseCallbackExample />} />
+        <Route path='/hook' element={<ReactHookForm />} />
+
       </Routes>
       {/* nested routes */}
       {/* <Routes>
