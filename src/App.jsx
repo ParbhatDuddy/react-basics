@@ -47,8 +47,8 @@ import Fetch from './components/Fetch'
 import FetchAxios from './components/FetchAxios'
 import UseMemoHook from './components/useMemoHook'
 import UseCallbackExample from './components/useCallbackHook'
-import HookForm from './components/HookForm'
 import ReactHookForm from './components/ReactHookForm'
+import CounterComponent from './components/CounterComponent'
 const App = () => {
   return (
     <>
@@ -58,6 +58,8 @@ const App = () => {
         <Route path='/memohook' element={<UseMemoHook />} />
         <Route path='/callbackhook' element={<UseCallbackExample />} />
         <Route path='/hook' element={<ReactHookForm />} />
+        <Route path='/counter' element={<CounterComponent />} />
+       
 
       </Routes>
       {/* nested routes */}

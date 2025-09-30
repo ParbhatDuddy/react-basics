@@ -24,9 +24,9 @@ const ReactHookForm = () => {
             console.log('data', data)
             console.log('getUsername', getUsername)
             reset({
-                username:"",
-                email:watchPassword,
-                password:""
+                username: "",
+                email: watchPassword,
+                password: ""
             })
 
         }
@@ -37,7 +37,10 @@ const ReactHookForm = () => {
     }
     return (
         <>
+
             <div style={{ maxWidth: 400, margin: "40px auto", padding: 20, border: "1px solid #ddd", borderRadius: 8 }}>
+
+
                 <h2>Signup Form</h2>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div style={{ marginBottom: 16 }}>
@@ -94,10 +97,10 @@ const ReactHookForm = () => {
                             type="password"
                             {...register("confirmpassword", {
                                 required: "Confirm password is required",
-                                validate: (value) =>value === watchPassword || "Passwords do not match",
+                                validate: (value) => value === watchPassword || "Passwords do not match",
                             })}
-                        placeholder="Confirm your password"
-                        style={{ width: "100%", padding: 8, marginTop: 4, border: '1px solid black' }}
+                            placeholder="Confirm your password"
+                            style={{ width: "100%", padding: 8, marginTop: 4, border: '1px solid black' }}
                         />
                         {errors.confirmpassword && <p style={{ color: "red" }}>{errors.confirmpassword.message}</p>}
                     </div>
