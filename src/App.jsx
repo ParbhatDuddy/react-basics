@@ -49,6 +49,7 @@ import UseMemoHook from './components/useMemoHook'
 import UseCallbackExample from './components/useCallbackHook'
 import ReactHookForm from './components/ReactHookForm'
 import CounterComponent from './components/CounterComponent'
+import { Welcome } from './components/Welcome'
 const App = () => {
   return (
     <>
@@ -59,6 +60,7 @@ const App = () => {
         <Route path='/callbackhook' element={<UseCallbackExample />} />
         <Route path='/hook' element={<ReactHookForm />} />
         <Route path='/counter' element={<CounterComponent />} />
+        <Route path='/' element={<Welcome />} />
        
 
       </Routes>
