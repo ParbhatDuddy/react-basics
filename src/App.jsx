@@ -50,6 +50,7 @@ import UseCallbackExample from './components/useCallbackHook'
 import ReactHookForm from './components/ReactHookForm'
 import CounterComponent from './components/CounterComponent'
 import { Welcome } from './components/Welcome'
+import { ReduxCounter } from './components/Reduxcounter.jsx'
 const App = () => {
   return (
     <>
@@ -61,6 +62,7 @@ const App = () => {
         <Route path='/hook' element={<ReactHookForm />} />
         <Route path='/counter' element={<CounterComponent />} />
         <Route path='/' element={<Welcome />} />
+        <Route path='/redux' element={<ReduxCounter />} />
        
 
       </Routes>
